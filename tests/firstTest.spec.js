@@ -29,8 +29,7 @@ test('Add new product', async ({page})=> {
 
     const product =  page.locator('div.product-name:has-text("Amazing tshirt")');
     await page.waitForTimeout(3000);
-
-    await product.isVisible();
+    await product.isVisible(); 
     await page.waitForTimeout(3000);
 
     //update item
